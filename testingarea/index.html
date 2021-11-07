@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Area</title>
+
+</head>
+<body>
+    <h1>Testing Area</h1>
+    
+    <div class="container">
+        <script>
+            var botmanWidget = {
+                frameEndpoint: '/customchat.html',
+                chatServer: 'http://127.0.0.1:8000/botman',
+                title: 'Chat bot',
+                introMessage: 'Hola! Puedes comenzar a chatear conmigo diciendo "Hola bot"',
+                aboutText: null
+            };
+        </script>
+        <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
+    </div>
+
+    <script>
+        setTimeout(async () => {
+            await botmanChatWidget.open();
+            //await botmanChatWidget.sayAsBot('Hola! Puedes comenzar a chatear conmigo diciendo "Hola bot"');
+        }, 1000);
+        
+    </script>
+</body>
+</html>

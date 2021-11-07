@@ -9,7 +9,7 @@ use App\Conversations\BotConversation;
 class ChatController extends Controller
 {
     function index($bot){
-        $bot->startConversation(new BotConversation);
+        $bot->startConversation(new BotConversation());
     }
 
 }
